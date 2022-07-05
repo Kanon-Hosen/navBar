@@ -1,5 +1,5 @@
 {
-  "name": "navbar-k",
+  "name": "navbar-kn",
   "version": "1.0.0",
   "description": "This can create a responsive navbar",
   "main": "app.js",
@@ -11,12 +11,15 @@
     "url": "git+https://github.com/Kanon-Hosen/navBar.git"
   },
   "keywords": [
-    "navbar-k"
+    "navBar-kn"
   ],
   "author": "Kanon Hosen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Kanon-Hosen/navBar/issues"
   },
-  "homepage": "https://github.com/Kanon-Hosen/navBar#readme"
+  "homepage": "https://github.com/Kanon-Hosen/navBar#readme",
+  "dependencies": {
+    "navbar-k": "^1.0.0"
+  }
 }

@@ -20,3 +20,4 @@ const navSlide = () =>{
     });
 }
 navSlide();
+mudule.export = navSlide();
