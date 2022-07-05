@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(10, 3, 48);
+    width: 100%;
+}
+nav .logo{
+    color: rgb(238, 235, 235);
+    font-size: 20px;
+}
+ .nav-links {
+     justify-content: space-around;
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: rgb(238, 235, 235);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+}
+.burger{
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width: 860px) {
+    .nav-links{
+        width: 45%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+      body{
+          overflow-x: hidden;
+      }
+    .nav-links{
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        height: 92vh;
+        background-color: rgb(7, 2, 36);
+
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition:  0.4s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    .burger{
+        display: block;
+        transition: 0.4s ease-in-out;
+
+    }
+  }
+  .nav-active{
+      transform: translateX(0%);
+  }
+  @keyframes navlinksFade {
+      from{
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to{
+        opacity: 1;
+        transform: translateX(0);
+      }
+  }
+  .toggle .line1{
+      transform: rotate(-45deg) translate(-5px,6px );
+      transition: 0.4s ease-in-out;
+  }
+  .toggle .line2{
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}  
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px );
+    transition: 0.4s ease-in-out;
+}
