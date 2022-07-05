@@ -1,0 +1,22 @@
+{
+  "name": "navbar",
+  "version": "1.0.0",
+  "description": "This can create a responsive navbar",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kanon-Hosen/navBar.git"
+  },
+  "keywords": [
+    "navBar"
+  ],
+  "author": "Kanon Hosen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kanon-Hosen/navBar/issues"
+  },
+  "homepage": "https://github.com/Kanon-Hosen/navBar#readme"
+}
